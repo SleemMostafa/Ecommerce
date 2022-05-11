@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/showProduct.css" class="css">
+  <script src="https://kit.fontawesome.com/47f93292b1.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>product-electric</title>
+
+</head>
+
+<body>
+  <!-- star navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light  shadow fixed-top"
+    style="background-color: #121315; color: rgb(192, 188, 188);">
+    <div class="container">
+      <h4>Product</h4>&nbsp;<span style="font-size: 20px; color: #053794;">Cart</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a style="color: rgb(192, 188, 188);" class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: rgb(192, 188, 188);" class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: rgb(192, 188, 188);" class="nav-link" href="registeration.html">Sgin Up</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: rgb(192, 188, 188);" class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+  <div>
+    <div class="settingsBox" style="padding: 60px;">
+      <button type="button" class="btn btn-outline-dark" style="width: 120px;color: white; "
+        onclick="DiscardCart()">Remove Cart</button><br><br>
+      <div id="priceDiv" style="color: white; width: 160px;"></div>
+      <button type="button" class="btn btn-outline-dark" style="width: 120px;color: white; "
+        onclick="BuyProduct()">Buy</button>
+      <div class="toggleSettings"></div>
+      <div class="settingsContainer">
+      </div>
+    </div>
+  </div>
+  <!-- ******************** -->
+  <div class="small-container single-product">
+    <div class="row">
+      <div class="col-2">
+        <img src="../photo/btr4.png" width="100%" id="productImg">
+        <div class="small-img-row">
+          <div class="small-im-col">
+            <img src="../photo/btr4.png" width="100%" class="small-img" id="smallImg1">
+          </div>
+          <div class="small-im-col">
+            <img src="../photo/btr4.png" width="100%" class="small-img" id="smallImg2">
+          </div>
+          <div class="small-im-col">
+            <img src="../photo/btr4.png" width="100%" class="small-img" id="smallImg3">
+          </div>
+          <div class="small-im-col">
+            <img src="../photo/btr4.png" width="100%" class="small-img" id="smallImg4">
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <p>Machines</p>
+        <h1 style="color: white;">Electric-Product</h1>
+        <h4 id="priceHeader" style="color:white"></h4>
+        <select id="selectID" onclick="DisplayPrice()">
+          <option>Select model</option>
+          <option id="num1500">1500</option>
+          <option id="num2000">2000</option>
+          <option id="num2500">2500</option>
+        </select>
+        <input type="number" value="1" id="numberOf">
+        <button style="color: white;" class="btn" onclick="addToCart()">Add to Cart</button>
+        <br>
+        <h3 style="color: white;">Product Details<i class="fa fa-indent"></i></h3>
+        <br>
+        <p style="color: white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, harum cum, ut
+          sapiente
+          repellendus neque modi eveniet iure voluptas sunt deserunt rerum! At atque accusamus aperiam ut
+          commodi temporibus voluptates?</p>
+      </div>
+    </div>
+  </div>
+  <!-- End side -->
+  <script src="../js/show.js"></script>
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

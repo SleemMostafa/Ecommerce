@@ -1,0 +1,111 @@
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: url('../photo/02.jpg');
+    background-size: cover;
+    z-index: 0;
+    font-family: 'Open Sans',sans-serif;
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+    width:700px;
+    height: 600px;
+    background:  #191919;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+form:hover
+{
+    opacity: 80%;
+}
+form input
+{
+    cursor:text;
+}
+input{
+    display: block;
+    width: 350px;
+    height: 40px;
+    outline: none;
+    background: transparent;
+    z-index: 2;
+    color: white;
+    border:none;
+    border-bottom: 1px solid white;
+}
+
+.signup {
+    width: 250px;
+    height: 40px;
+    font-size:20px; ;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(204, 136, 9);
+    margin-top: 20px;
+    cursor: pointer;
+}
+form h1 {
+    color: rgb(204, 136, 9);
+}
+
+::placeholder{
+    color: rgb(240, 232, 232);
+}
+
+/* settingsbox */
+
+.settingsBox{
+    position: fixed;
+    left: -200px;
+    top: 0;
+    background-color: #ffffff96;
+    width: 250px;
+    z-index: 1000;
+    min-height: 100vh;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.settingsBox a
+{
+    text-decoration: none;
+    color: black;
+}
+.settingsBox.open {
+    left: 0;
+}
+
+.settingsBox .toggleSettings{
+    position: absolute;
+    right: -32px;
+    top: 100px;
+    background-color: rgb(204, 136, 9);
+    cursor: pointer;
+
+}
+
+.settingsBox .toggleSettings .fa-gear{
+ width: 30px;
+ padding: 8px 8px;
+}
+
+.btn:hover
+{
+    background-color: rgb(204, 136, 9);
+}

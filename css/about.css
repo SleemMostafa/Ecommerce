@@ -1,0 +1,187 @@
+body
+{
+     
+     background-size: cover;
+    font-family: sans-serif;
+}
+/* Start Header */
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../photo/aboutbackground.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .fw-light {
+    font-weight: 300!important;
+    text-align: center;
+    color: wheat;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+    color: wheat;
+
+}
+/* End Header */
+/* Start Product */
+.main-proudct h3
+{
+    color: rgb(16, 93, 194);
+    
+}
+.main-proudct p
+{
+    color: rgb(124, 124, 128);
+}
+.main-proudct button
+{
+    color: white;
+}
+/* End Product */
+/* Start Footer */
+
+footer {
+  background-color: #121315;
+  color: #ffffff;
+  font-size: 16px;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row {
+  padding: 2em 1em;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+h2 {
+  width: 100%;
+  text-align: left;
+  color: #2a8ded;
+  font-size: 1.6em;
+  white-space: nowrap;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #2a8ded;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+input,
+button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+button {
+  background-color: #2a8ded;
+  color: #ffffff;
+}
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+  /* End Footer */
+* {margin: 0; padding: 0;}
+
+a {text-decoration: none;}
+
+/* This class is added on scroll */
+.fixed {
+	position: fixed;
+	top: 0;
+	height: 70px;
+	z-index: 1;
+}
+
+body {
+	color: #fff;
+	font-family: 'open-sans-bold', AvenirNext-Medium, sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+/* Navigation Settings */
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background: #fff;
+}
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+}
+
+nav li a {
+	color: #757575;
+	text-transform: uppercase;
+}
+
+section {
+	height: 100vh;
+}
+
+/* Screens Settings */
+#screen1 {
+	background: #43b29d;
+}
+
+#screen1 p {
+	padding-top: 200px;
+}
+
+#screen2 {
+	background: #efc94d;
+}
+
+#screen3 {
+	background: #e1793d;
+}
+
+@media only screen and (max-width: 520px) {
+
+	nav li {
+		padding: 24px 4px;
+	}
+
+	nav li a {
+		font-size: 14px;
+	}
+
+}

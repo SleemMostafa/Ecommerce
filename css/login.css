@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',sans-serif;
+    background-image: url(../photo/02.jpg);
+    background-size: cover;
+}
+.box
+{
+width: 600px;
+padding: 40px;
+position: absolute;
+height: 400px;
+top: 50%;
+left:50% ;
+transform: translate(-50%,-50%);
+background:  #191919;;
+text-align: center;
+border-radius: 15px;
+}
+.box:hover
+{
+  opacity: 80%; 
+  cursor: pointer; 
+}
+.box h1{
+color: rgb(204, 136, 9);
+text-transform: uppercase;
+font-size: 50px;
+}
+
+
+.box input[type ="text"] ,.box input[type="password"]{
+border: 0;
+background: none;
+display: block;
+margin:20px auto ;
+text-align: center;
+border: 0px 0px 0px 0px ;
+border-bottom: 1px solid white;
+padding: 14px 10px;
+width: 500px;
+outline: none;
+color: white;
+text-align: left;
+line-height: 30px;
+
+}
+.box input[type ="text"]:focus ,.box input[type="password"]:focus{
+
+border-color: white;
+
+}
+/* input:focus:invalid {
+
+    background-color:rgb(255, 255, 255) ;
+    background-size: 25px;
+} */
+.box input[type ="submit"]{
+
+    border: 0;
+    background: none;
+    display: block;
+    margin:20px auto ;
+    text-align: center;
+    border: none;
+    padding: 14px 40px;
+    font-size: 20px;
+    outline: none;
+    color: black;
+    border-radius: 10px;
+    transition: 0.25s;
+    color: white;
+    width: 150px;
+    background-color: rgb(204, 136, 9);
+
+}
+.box input[type ="submit"]:hover{
+
+    background: rgb(204, 136, 9);
+    cursor: pointer;
+}
+::placeholder{
+    color: rgb(240, 232, 232);
+}
+
+/* settingsbox */
+
+.settingsBox{
+    position: fixed;
+    left: -200px;
+    top: 0;
+    background-color: #ffffff96;
+    width: 250px;
+    z-index: 1000;
+    min-height: 100vh;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.settingsBox a
+{
+    text-decoration: none;
+    color: black;
+}
+.settingsBox.open {
+    left: 0;
+}
+
+.settingsBox .toggleSettings{
+    position: absolute;
+    right: -32px;
+    top: 100px;
+    background-color: rgb(204, 136, 9);
+    cursor: pointer;
+
+}
+
+.settingsBox .toggleSettings .fa-gear{
+ width: 30px;
+ padding: 8px 8px;
+}
+
+.btn:hover
+{
+    background-color: rgb(204, 136, 9);
+}
